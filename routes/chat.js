@@ -14,3 +14,20 @@ exports.view = function(req, res) {
 
   	//res.render('chat');
 };
+
+exports.addMessage = function(req, res) {
+	var form_data = req.body;
+
+	var newMessage = new models.Newsfeed({
+		"user": form_data.user,
+	    "message": form_data.message,
+	    "posted": form_data.posted
+	});
+	newMessage.save(afterSaving);
+
+	function afterSaving(err) { // this is a callback
+    if(err) {console.log(err); res.send(500); 
+    res.redirect('/');
+ 	}
+  }
+}

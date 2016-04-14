@@ -14,8 +14,10 @@
     console.log(data);
     // grab and parse data and assign it to the parsedData variable.
 
-    // other possible solution(s) here.
+    // other possible solution(s) here
     $('#messages').prepend($('<li>').html(messageTemplate(parsedData)));
+    $.post('/new', parsedData, function() {
+    });
 
 });
     // You may use this for updating new message
@@ -31,16 +33,16 @@
         var display_date = date_obj.toLocaleDateString('en-US', options);
 
 
-        var result = '<div class="user">' +
+        var result = '<div class="user" style="font-size:30px">' +
             '<div class="user-image">' +
             '<img src="' + template.user.photo + '" alt="">' +
             '</div>' +
-            '<div class="user-info">' +
+            '<div class="user-info" >' +
             '<span class="username">' + template.user + '</span><br/>' +
-            '<span class="posted">' + display_date + '</span>' +
+            '<span class="posted" style="font-size: 70%">' + display_date + '</span>' +
             '</div>' +
             '</div>' +
-            '<div class="message-content">' +
+            '<div class="message-content"style="font-size: 25px">' +
             template.message +
             '</div>';
         return result;
