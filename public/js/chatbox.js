@@ -11,6 +11,7 @@
 
     socket.on("newsfeed", function(data) {
     var parsedData = data;
+    console.log(data);
     // grab and parse data and assign it to the parsedData variable.
 
     // other possible solution(s) here.

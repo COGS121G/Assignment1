@@ -120,7 +120,7 @@ io.on('connection', function(socket){
 });
 
 
-/* TODO: Server-side Socket.io here 
+/* TODO: Server-side Socket.io here */
 io.on("connection", function(socket) {
 	var user = socket.request.session.passport.user;
 
@@ -138,7 +138,6 @@ io.on("connection", function(socket) {
     	io.emit("newsfeed", NewsFeed );
 	});
 });
-*/
 
 
 // Start Server
