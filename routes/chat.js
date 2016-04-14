@@ -8,6 +8,7 @@ exports.view = function(req, res) {
 	models.Newsfeed.find().sort('posted').exec(renderFeed);
 
 	function renderFeed(err, newsfeed) {
+		console.log(newsfeed);
 		res.render('chat', { 'newsfeed': newsfeed });
 	}
 
