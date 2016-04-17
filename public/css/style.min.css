@@ -1,3 +1,8 @@
+@font-face {
+    font-family: museo;
+    src: url("../fonts/museosans-500.otf")  format("opentype");
+}
+
 body 	{
 	background-image:url("../img/bg.png");
 	background-repeat:repeat;
@@ -182,7 +187,35 @@ footer	{
 /* new stuff */
 
 .loginbutton {
-	font-size: 30px;
-	margin: auto;
-	padding: 10px;
+	text-align: center;
+ 	 display: block;
+ 	 margin-top: 40px;
+}
+
+#footer {
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#logo {
+	margin-top: 30px;
+}
+
+#welcome {
+	margin-top: 40px;
+	color: #000000;
+	font-family: museo;
+}
+
+#center {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin: auto;
+  text-align: center;
 }
