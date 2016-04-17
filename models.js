@@ -12,6 +12,7 @@ var UserSchema = new Schema({
 var NewsfeedSchema = new Schema({
 	"user": String,
     "message": String,
+    "picture": String,
     "posted": Date
 });
 

@@ -20,17 +20,17 @@
             {{#each newsfeed}}
             <hr>
             <li>
-                <div class="user">
+                <div class="user" style="font-size:30px">
                     <div class="user-image">
-                        <img src="{{user.photo}}" alt="">
+                        <img src="{{picture}}" alt="">
                     </div>
                     <div class="user-info">
-                        <span class="username">{{user.username}}</span>
+                        <span class="username">{{user}}</span>
                         <br/>
-                        <span class="posted">{{posted}}</span>
+                        <span class="posted" style="font-size: 50%" >{{posted}}</span>
                     </div>
                 </div>
-                <div class="message-content">
+                <div class="message-content" style="font-size: 25px">
                     {{message}}
                 </div>
             </li>

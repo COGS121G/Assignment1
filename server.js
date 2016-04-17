@@ -94,8 +94,6 @@ passport.deserializeUser(function(user, done) {
 app.get("/", router.index.view);
 app.get("/chat", router.chat.view);
 
-app.post("/new", router.chat.addMessage);
-
 app.get("/auth/twitter", passport.authenticate('twitter'));
 app.get("/auth/twitter/callback", passport.authenticate('twitter', { successRedirect: '/chat', failureRedirect: '/'}));
 app.get("/logout", function(req, res) {
