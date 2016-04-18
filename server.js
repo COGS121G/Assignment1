@@ -68,10 +68,16 @@ passport.use(new strategy.Twitter({
     if(err) {
       return done(err)
     }
+    console.log("the photo is: "+profile.photos[0].value);
     if(!user) {
       var newUser = new models.User({
-      	"twitterID": profile.id
+      	"twitterID": profile.id,
+        "username" : profile.username,
+        "token" : token,
+        "displayName": profile.displayName,
+        "photo": profile.photos[0].value
       });
+      newUser.save();
       return done(null, profile);
     } else {
       process.nextTick(function() {
@@ -130,12 +136,13 @@ io.on("connection", function(socket) {
 
 	socket.on("newsfeed", function(msg) {
 		var NewsFeed = new models.Newsfeed({
-	    	"user": user.username,
+	    	"user": socket.request.session.passport.user.displayName,
 		    "message": msg,
-		    "posted": new Date()
+		    "posted": new Date(),
+        "picture":socket.request.session.passport.user.photos[0].value 
 	    });
-    
-    	io.emit("newsfeed", NewsFeed );
+      NewsFeed.save();
+      io.emit("newsfeed", NewsFeed );
 	});
 });
 
