@@ -3,6 +3,12 @@
     /* TODO: Start your Javascript code here */
     var socket = io();
 
+    $('.deletebutton').click(function(e) {
+        var newsfeedID = $(this).attr('id');
+        $.post('/deleteNF', { id: newsfeedID}, function() {
+        });
+    });
+
     $('form').submit(function() {
         socket.emit('newsfeed', $('#user_input').val());
         $('#user_input').val('');
