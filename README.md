@@ -20,7 +20,6 @@ All features (search bar, posting, news feed) follow conventions of other compar
 # Error prevention
 Users are informed to press the “enter” key before they submit a new post
 Our interface uses larger text and buttons so elderly people have no trouble reading or using our app, but the text is not overly large so as to appear condescending.
-Possible violation: App doesn’t warn the user if they really want to exit the page while they’re still writing a message. This would be to avoid the error of the user accidentally navigating away from the page in the midst of writing a message, losing the message.
 
 # Recognition rather than recall
 All objects, actions, and options are visible and easy to use. The post field and search bar have visible instructions embedded when they are left blank, and there is a help button if a user is confused.
@@ -33,7 +32,6 @@ Buttons and text are big as well as simple allowing senior users the easy of use
 # Aesthetic and minimalist design
 All dialogues (search bar and post message) include only relevant and necessary information.
 Aesthetics are kept to a minimal to guide senior users towards areas of focus. Big text allows them to easily digest information that might be otherwise difficult.
-Possible violation: Timestamps for posts show extra information: GMT information is kind of irrelevant
  
 # Help users recognize, diagnose, and recover from errors
 Until a user types a new message, the blank field will have default text that says “Type a new message and hit enter”
