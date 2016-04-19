@@ -16,6 +16,24 @@ exports.view = function(req, res) {
 
 };
 
+
+
+exports.postVotes = function(req, res) {
+  console.log(req.body);
+
+  var message = req.body.messageContext;
+  var upvotes = req.body.upvotes;
+  var downvotes = req.body.downvotes;
+
+  models.Newsfeed.findOne({'name': messageContext}, function (err, messageToUpdate) {
+    messageToUpdate.upvotes = upvotes;
+    messageToUpdate.downvotes = downvotes;
+    messageToUpdate.save(function (err) { if(err) console.log(err); });
+  });
+}
+
+
+
 exports.deleteNewsfeed = function(req, res) {
   var newsfeedID = req.body.id;
 
