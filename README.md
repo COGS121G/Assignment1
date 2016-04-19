@@ -56,7 +56,7 @@ Andrew:
 Heuristic write-up evaluation. Some css.
 
 Mark:
-Heuristic write-up evaluation
+Heuristic write-up evaluation. Some css.
 
 David Liberman:
 Helped members with completion and Part 1 and completed and pushed my(almost) working Part 1 as the base of our code. Worked on getting the models set up correctly and helped get pictures correctly. Led ideation on app idea and logo creation. Worked on various UI elements throughout site. Organized git and slack. Implemented upvotes(wasn’t persisting to db last second so I commented it out). Got the help button working.

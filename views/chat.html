@@ -26,7 +26,7 @@
 <section>
     <div id="inner">
         <form id="send_message" action="">
-            <input id="user_input" placeholder="Tell the world about your most recent experience with your grand kids :)" autocomplete="off" />
+            <input id="user_input" placeholder="Tell the world about your most recent experience with your grand kids and press Enter :)" autocomplete="off" />
         </form>
         <ul id="messages">
             {{#each newsfeed}}
@@ -53,18 +53,18 @@
     </div>
 </section>
 
-<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="font-size: 150%">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="exampleModalLabel">ABOUT GRANDTIME</h2>
+                <h2 style="font-weight: bold" class="modal-title" id="exampleModalLabel">ABOUT GRANDTIME</h2>
             </div>
             <div class="modal-body">
-                GrandTime exists to provide a great social network for grandparents to share positive experiences with your grandchildren. We provide a senior friendly user interface so you never have to be confused about interacting again!<br><br>
+                GrandTime exists to provide a great social network for grandparents to share positive experiences with their grandchildren. We provide a senior-friendly user interface so you never have to be confused about interacting again!<br><br>
 
-              <ul style = "list-style-type: decimal" id = "helplist"><h3>HOW TO:</h3>
+              <ul style = "list-style-type: decimal" id = "helplist"><h3 style="font-weight: bold">HOW TO:</h3>
                 <li>Write a message on top! Express your funny or nice times with your grandchildren</li>
                 <li>Search users or other messages!</li>
             </ul>
