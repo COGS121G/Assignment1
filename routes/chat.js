@@ -8,8 +8,6 @@ exports.view = function(req, res) {
 	models.Newsfeed.find({}).sort("-posted").exec(renderFeed);
 
 	function renderFeed(err, newsfeed) {
-		//console.log("trying to find:" + models.User.find({}).sort('photo'));
-		//console.log(newsfeed);
 		if(err) {
 			res.render("chat", {"newsfeed": "Error loading messages"});
 		}

@@ -20,6 +20,7 @@
         var parsedData = data;
         // grab and parse data and assign it to the parsedData variable.
         window.location.href="/chat";
+
         // other possible solution(s) here
         //$('#messages').prepend($('<li>').html(messageTemplate(parsedData)));
 

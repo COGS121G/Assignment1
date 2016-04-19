@@ -29,7 +29,7 @@ var strategy = {   Twitter: require("passport-twitter")
 
 // Database Connection
 var db = mongoose.connection;
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1/cogs121');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1/cogs121');
 db.on('error', console.error.bind(console, 'Mongo DB Connection Error:'));
 db.once('open', function(callback) {
     console.log("Database connected successfully.");
@@ -126,7 +126,6 @@ io.on('connection', function(socket){
     console.log('user disconnected');
   });
 });
-
 
 /* TODO: Server-side Socket.io here */
 io.on("connection", function(socket) {
