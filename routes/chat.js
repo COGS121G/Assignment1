@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 exports.view = function(req, res) {
     //console.log(data);
 
-	models.Newsfeed.find({}).exec(renderFeed);
+	models.Newsfeed.find({}).sort("-posted").exec(renderFeed);
 
 	function renderFeed(err, newsfeed) {
 		//console.log("trying to find:" + models.User.find({}).sort('photo'));
