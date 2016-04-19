@@ -20,17 +20,17 @@
   "homepage": "https://github.com/daleebz/cogs121-sp16-ass0#readme",
   "dependencies": {
     "body-parser": "1.15.0",
-    "connect-mongo": "^1.1.0",
-    "cookie-parser": "^1.4.1",
-    "dotenv": "^2.0.0",
+    "connect-mongo": "1.1.0",
+    "cookie-parser": "1.4.1",
+    "dotenv": "2.0.0",
     "express": "4.13.4",
     "express-handlebars": "3.0.0",
-    "express-session": "^1.13.0",
-    "method-override": "^2.3.5",
+    "express-session": "1.13.0",
+    "method-override": "2.3.5",
     "mongodb": "2.1.15",
     "mongoose": "4.4.11",
-    "passport": "^0.3.2",
-    "passport-twitter": "^1.0.4",
-    "socket.io": "^1.4.5"
+    "passport": "0.3.2",
+    "passport-twitter": "1.0.4",
+    "socket.io": "1.4.5"
   }
 }
