@@ -14,6 +14,7 @@
         var parsedData = data;
         // grab and parse data and assign it to the parsedData variable.
 
+        console.dir ( data.user+ " says " + parsedData["message"] + " at " + parsedData["posted"]);
         // other possible solution(s) here
         $('#messages').prepend($('<li>').html(messageTemplate(parsedData)));
 
