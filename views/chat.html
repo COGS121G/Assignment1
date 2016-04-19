@@ -18,6 +18,10 @@
         </svg>
         <input class="filtered-search" placeholder="Search username or messages" autocomplete="off" />
     </div>
+
+    <script src="/js/vote.js"></script>
+
+
 </header>
 <section>
     <div id="inner">
@@ -29,6 +33,19 @@
             <hr>
             <li>
                 <a href="/chat" class="deletebutton" id="{{id}}"><img src="img/1461043197_fileclose.png" style="float:right; width: 100px; height: auto;"></a>
+
+                 <div class="caption-box">
+                    <div class="right">
+                    <div class="score unvoted" id="{{name}}">
+                        <span class="arrow up"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        <span class="score upvote">{{upvotes}}</span></br>
+                        <span class="arrow down"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                        <span class="score downvote">{{downvotes}}</span>
+                    </div>
+                    </div>
+                 </div>
+
+
                 <div class="user" style="font-size:30px">
                     <div class="user-image">
                         <img src="{{picture}}" alt="">
@@ -58,10 +75,12 @@
                 <h2 class="modal-title" id="exampleModalLabel">ABOUT GRANDTIME</h2>
             </div>
             <div class="modal-body">
-              SampleTEXT-Liberman<br><br>
+                GrandTime exists to provide a great social network for grandparents to share positive experiences with your grandchildren. We provide a senior friendly user interface so you never have to be confused about interacting again!<br><br>
 
-              <ul style = "list-style-type: decimal" id = "helplist"><h3>LiberHelp:</h3>
-                <li>LIberList</li>
+              <ul style = "list-style-type: decimal" id = "helplist"><h3>HOW TO:</h3>
+                <li>Write a message on top! Express your funny or nice times with your grandchildren</li>
+                <li>Search users or other messages!</li>
+                <li>Feel free to vote up and down on your favorate messages so others know which content is best!</li>
             </ul>
             </div>
         </div>
