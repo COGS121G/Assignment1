@@ -47,7 +47,7 @@ There is a help button in the upper right corner if the user finds anything conf
 
 # Group Member Contribution Documentation
 Amr:
-Worked on styling and design implementation for site as a whole in chat and index. Helped conceptualize website. Got photos to start working in the app. Heroku Wiz Kid.
+Worked on styling landing and chat pages. Overall design implementation for site as a whole in chat and index. Helped conceptualize main website features like delete, sort and other. Fixed a tedious bug where user profile pictures were not workig. Heroku Wiz Kid.
 
 Jean: 
 Helped with working with mongodb. Delete functionality, formatting index.html and working with post. Worked on UI elements in index.html and Back end functionality for chat. 
