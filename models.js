@@ -15,6 +15,7 @@ var NewsfeedSchema = new Schema({
   	//"downvotes" : { type: Number, default: 0 },
     "message": String,
     "picture": String,
+    "dateString": String,
     "posted": Date
 });
 

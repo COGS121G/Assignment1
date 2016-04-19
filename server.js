@@ -131,16 +131,23 @@ io.on('connection', function(socket){
 io.on("connection", function(socket) {
 	var user = socket.request.session.passport.user;
   
-
 	socket.on('disconnect', function(){
     	console.log('user disconnected'); 
   	});
 
 	socket.on("newsfeed", function(msg) {
-    //var date = new Date(milliseconds);
+    var date = new Date();
+    var options = {
+      weekday: "long", year: "numeric", month: "short",
+      day: "numeric", hour: "2-digit", minute: "2-digit"
+    };
+    var dateString = date.toLocaleTimeString("en-us", options);
+    console.log("date string isssss:" + dateString);
+
 		var NewsFeed = new models.Newsfeed({
 	    	"user": socket.request.session.passport.user.displayName,
 		    "message": msg,
+        "dateString": dateString,
 		    "posted": new Date(),
         "picture":socket.request.session.passport.user.photos[0].value 
 	    });
