@@ -11,8 +11,8 @@ var UserSchema = new Schema({
 
 var NewsfeedSchema = new Schema({
 	"user": String,
-	"upvotes" : { type: Number, default: 0 },
-  	"downvotes" : { type: Number, default: 0 },
+	//"upvotes" : { type: Number, default: 0 },
+  	//"downvotes" : { type: Number, default: 0 },
     "message": String,
     "picture": String,
     "posted": Date
