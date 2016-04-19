@@ -130,12 +130,14 @@ io.on('connection', function(socket){
 /* TODO: Server-side Socket.io here */
 io.on("connection", function(socket) {
 	var user = socket.request.session.passport.user;
+  
 
 	socket.on('disconnect', function(){
     	console.log('user disconnected'); 
   	});
 
 	socket.on("newsfeed", function(msg) {
+    //var date = new Date(milliseconds);
 		var NewsFeed = new models.Newsfeed({
 	    	"user": socket.request.session.passport.user.displayName,
 		    "message": msg,

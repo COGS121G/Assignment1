@@ -4,9 +4,14 @@
 }
 
 body 	{
-	background-image:url("../img/bg.png");
-	background-repeat:repeat;
-	font-family:'Lato',sans-serif
+	background: url("../img/bg.jpg") no-repeat center center; 
+	margin-bottom: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
+	/*font-family:'Lato',sans-serif*/
 }
 
 header	{
@@ -187,7 +192,7 @@ footer	{
 /* new stuff */
 
 .loginbutton {
-	text-align: center;
+	 text-align: center;
  	 display: block;
  	 margin-top: 40px;
 }
@@ -204,12 +209,11 @@ footer	{
 
 #logo {
 	margin-top: 30px;
+	margin-left:30px;
 }
 
 #welcome {
-	margin-top: 40px;
-	color: #000000;
-	font-family: museo;
+	margin-top: 200px;
 }
 
 #center {
@@ -218,4 +222,19 @@ footer	{
   position: relative;
   margin: auto;
   text-align: center;
+}
+
+.landingBox{
+	background-color: rgba(256,256, 256,.5);
+	margin:5%;
+}
+
+.landingBox > h1{
+	font-size: 5em;
+	color: #111623;
+}
+
+.landingBox > p{
+	font-size: 1.5em;
+	color: #111623;
 }
