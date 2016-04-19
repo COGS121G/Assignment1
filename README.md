@@ -45,7 +45,7 @@ Direction is embedded into the features themselves (ex. The default text of the 
 There is a help button in the upper right corner if the user finds anything confusing
 
 
-Group Member Contribution Documentation
+# Group Member Contribution Documentation
 Amr:
 Worked on styling and design implementation for site as a whole in chat and index. Helped conceptualize website. Got photos to start working in the app. Heroku Wiz Kid.
 
