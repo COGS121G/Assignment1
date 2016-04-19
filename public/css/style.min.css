@@ -3,7 +3,7 @@
     src: url("../fonts/museosans-500.otf")  format("opentype");
 }
 
-body 	{
+body {
 	background: url("../img/bg.jpg") no-repeat center center; 
 	margin-bottom: 0px;
     -webkit-background-size: cover;

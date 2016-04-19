@@ -1,0 +1,10 @@
+body {
+	background: url("../img/bg.png") repeat center center; 
+	margin-bottom: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
+	/*font-family:'Lato',sans-serif*/
+}
